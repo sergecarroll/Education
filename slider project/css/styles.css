@@ -1,0 +1,126 @@
+body
+{
+    width: 100%;
+    height: auto;
+    
+    margin: 0;
+    padding: 0;
+
+    background-color: #F5F5F5;
+
+    font-family: 'Indie Flower', cursive;
+    color: black;
+}
+
+h1
+{
+    line-height:100%;
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+h2 {
+    margin: 5px 10px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 50px auto;
+    padding: 0;
+}
+
+.header-wrapper {
+    padding: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background-color: #FEFEFE;
+}
+
+.slider-wrapper {
+    width: 960px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.column-left {
+    width: 80px;
+    height: 500px;
+    float: left;
+    margin: 0 auto;
+}
+
+.column-center {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    float: left;
+}
+
+.column-right {
+    width: 80px;
+    height: 500px;
+    float: right;
+    margin: 0 auto;
+}
+
+.arrows {
+    margin: 210px auto;
+}
+
+.left {
+     float: left;
+ }
+
+.right {
+    float: right;
+}
+
+.slider-content {
+    width: 9999px;
+    height: 500px;
+}
+
+.slide {
+    float: left;
+}
+
+.column {
+    width: 300px;
+    margin: 50px 10px;
+    float: left;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.fade:hover {
+    opacity: 0.7;
+    text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.icons {
+    margin: 10px 10px;
+}
+
+.drop-header {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    height: 40px;
+    width: 300px;
+    margin: 10px 0;
+    background-color: #FEFEFE;
+    cursor: pointer; 
+}

@@ -1,0 +1,159 @@
+body
+{
+margin: 0;
+padding: 0;
+}
+
+h1
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    color: ivory;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    text-align: left;
+
+    color: white;
+    background: url(../images/h2.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: left;
+    padding-left: 20px;
+    color: slategray;
+}
+
+p
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    color: slategray;
+}
+
+#border{
+  /*  border: 1px solid black;*/
+}
+
+/*#location {
+    position: relative;
+    padding-left: 21px;
+    background-image: expression(this.runtimeStyle.backgroundImage="none",
+  this.innerHTML = '<img alt="" src="http://f.cl.ly/items/1l1g2a3A161P1f121r1m/blog-icons.png">'+this.innerHTML);
+}
+
+#location:before{
+    content: url("");
+}*/
+
+#quote{
+
+}
+
+#alias-icon{
+    
+}
+.wrapper
+{
+    /*width: 980px;*/
+    margin: 0 auto;
+}
+
+.header-wrapper
+{
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+
+.footer-wrapper
+{
+    width: 100%;
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-wrapper
+{
+    padding: 50px 0;
+}
+
+/*.semiopacity {
+    background-image: url("../images/header.jpg");
+    opacity: 0.5;
+    color: transparent;
+}*/
+
+.header
+{
+    width: 980px;
+    height: 300px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.content
+{
+    width: 930px;
+    height: 410px;
+    margin: auto;
+    padding: 30px 25px;
+    box-shadow:
+    0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.column
+{
+    float: left;
+    width: 290px;
+    margin: auto;
+    padding: 10px;
+}
+
+.images
+{
+    border: 1px solid black;
+    margin: 20px 10px;
+    float: left;
+}
+
+.footer
+{
+    width: 980px;
+    height: 400px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.image-column
+{
+    float: left;
+    width: 33%;
+}
+
+.fade
+{
+    opacity: 0.7;
+}
+.fade:hover
+{
+    opacity: 1;
+}

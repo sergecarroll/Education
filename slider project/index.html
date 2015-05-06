@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hipster Hitler</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.css"">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+
+    <script type="text/javascript">
+
+        function load(){
+            var dropdown = document.getElementById('dropdown');
+            var accordeon1 = document.getElementById('accordeon1');
+            var accordeon2 = document.getElementById('accordeon2');
+            var accordeon3 = document.getElementById('accordeon3');
+
+            dropdown.addEventListener('click',function(){
+                if (document.getElementById('down').style.display == 'block') {
+                    document.getElementById('down').style.display = 'none';
+                    document.getElementById('up').style.display = 'block';
+                    document.getElementById('self').style.display = 'block';
+                } else if (document.getElementById('down').style.display == 'none') {
+                    document.getElementById('down').style.display = 'block';
+                    document.getElementById('up').style.display = 'none';
+                    document.getElementById('self').style.display = 'none';
+                }
+            },false)
+
+            accordeon1.addEventListener('click',function(){
+                if (document.getElementById('down1').style.display == 'block') {
+                    document.getElementById('down1').style.display = 'none';
+                    document.getElementById('down2').style.display = 'block';
+                    document.getElementById('down3').style.display = 'block';
+                    document.getElementById('up1').style.display = 'block';
+                    document.getElementById('up2').style.display = 'none';
+                    document.getElementById('up3').style.display = 'none';
+                    document.getElementById('himmler').style.display = 'block';
+                    document.getElementById('goebbels').style.display = 'none';
+                    document.getElementById('goering').style.display = 'none';
+                } else if (document.getElementById('down1').style.display == 'none') {
+                    document.getElementById('down1').style.display = 'block';
+                    document.getElementById('up1').style.display = 'none';
+                    document.getElementById('himmler').style.display = 'none';
+                }
+            },false)
+
+            accordeon2.addEventListener('click',function(){
+                if (document.getElementById('down2').style.display == 'block') {
+                    document.getElementById('down1').style.display = 'block';
+                    document.getElementById('down2').style.display = 'none';
+                    document.getElementById('down3').style.display = 'block';
+                    document.getElementById('up1').style.display = 'none';
+                    document.getElementById('up2').style.display = 'block';
+                    document.getElementById('up3').style.display = 'none';
+                    document.getElementById('himmler').style.display = 'none';
+                    document.getElementById('goebbels').style.display = 'block';
+                    document.getElementById('goering').style.display = 'none';
+                } else if (document.getElementById('down2').style.display == 'none') {
+                    document.getElementById('down2').style.display = 'block';
+                    document.getElementById('up2').style.display = 'none';
+                    document.getElementById('goebbels').style.display = 'none';
+                }
+            },false)
+
+            accordeon3.addEventListener('click',function(){
+                if (document.getElementById('down3').style.display == 'block') {
+                    document.getElementById('down1').style.display = 'block';
+                    document.getElementById('down2').style.display = 'block';
+                    document.getElementById('down3').style.display = 'none';
+                    document.getElementById('up1').style.display = 'none';
+                    document.getElementById('up2').style.display = 'none';
+                    document.getElementById('up3').style.display = 'block';
+                    document.getElementById('himmler').style.display = 'none';
+                    document.getElementById('goebbels').style.display = 'none';
+                    document.getElementById('goering').style.display = 'block';
+                } else if (document.getElementById('down3').style.display == 'none') {
+                    document.getElementById('down3').style.display = 'block';
+                    document.getElementById('up3').style.display = 'none';
+                    document.getElementById('goering').style.display = 'none';
+                }
+            },false)
+
+        }
+
+        function next() {
+
+            if (document.getElementById('slider').style.marginLeft == '0px') {
+                document.getElementById('slider').style.marginLeft = -800 + 'px';
+            } else
+            if (document.getElementById('slider').style.marginLeft == '-800px') {
+                document.getElementById('slider').style.marginLeft = -1600 + 'px';
+            } else
+            if (document.getElementById('slider').style.marginLeft == '-1600px') {
+                document.getElementById('slider').style.marginLeft = 0 + 'px';
+            }
+
+        }
+
+        function prev() {
+
+            if (document.getElementById('slider').style.marginLeft == '0px') {
+                document.getElementById('slider').style.marginLeft = -1600 + 'px';
+            } else
+            if (document.getElementById('slider').style.marginLeft == '-800px') {
+                document.getElementById('slider').style.marginLeft = 0 + 'px';
+            } else
+            if (document.getElementById('slider').style.marginLeft == '-1600px') {
+                document.getElementById('slider').style.marginLeft = -800 + 'px';
+            }
+
+        }
+
+        document.addEventListener('DOMContentLoaded', load, false);
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="header-wrapper">
+        <h1>Hipster Hitler</h1>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="slider-wrapper">
+
+            <div class="column-left">
+                <div class="arrows">
+                    <a href="#">
+                        <i class="fa fa-angle-left fa-5x left fade" onclick="prev()"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column-center">
+
+                <div class="slider">
+                    <div class="slider-content" id="slider" style="margin-left: 0px">
+                        <div class="slide">
+                            <img src="images/1.jpg"/>
+                        </div>
+                        <div class="slide">
+                            <img src="images/2.jpg"/>
+                        </div>
+                        <div class="slide">
+                            <img src="images/3.jpg"/>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="column-right">
+                <div class="arrows">
+                    <a href="#">
+                        <i class="fa fa-angle-right fa-5x right fade" onclick="next()"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column">
+
+            <div class="drop-header" id="accordeon1">
+                <h2 style="float: left">Himmler</h2>
+                <i id="down1" style="float: right; display: block" class="fa fa-1x fa-chevron-down icons"></i>
+                <i id="up1" style="float: right; display: none" class="fa fa-1x fa-chevron-up icons"></i>
+            </div>
+            <img id="himmler" src="images/himmler.jpeg" class="drop-content" style="display: none">
+
+            <div class="drop-header" id="accordeon2">
+                <h2 style="float: left">Goebbels</h2>
+                <i id="down2" style="float: right; display: block" class="fa fa-1x fa-chevron-down icons"></i>
+                <i id="up2" style="float: right; display: none" class="fa fa-1x fa-chevron-up icons"></i>
+            </div>
+            <img id="goebbels" src="images/goebbels.jpg" class="drop-content" style="display: none">
+
+            <div class="drop-header" id="accordeon3">
+                <h2 style="float: left">Goering</h2>
+                <i id="down3" style="float: right; display: block" class="fa fa-1x fa-chevron-down icons"></i>
+                <i id="up3" style="float: right; display: none" class="fa fa-1x fa-chevron-up icons"></i>
+            </div>
+            <img id="goering" src="images/goering.jpg" class="drop-content" style="display: none">
+
+        </div>
+
+        <div class="column">
+            <img src="images/dc.jpg" style="margin-top: 10px">
+        </div>
+
+        <div class="column">
+                <div class="drop-header" id="dropdown">
+                    <h2 style="float: left">Instagram</h2>
+                    <i id="down" style="float: right; display: block" class="fa fa-1x fa-chevron-down icons"></i>
+                    <i id="up" style="float: right; display: none" class="fa fa-1x fa-chevron-up icons"></i>
+                </div>
+            <img id="self" src="images/selfie.jpg" class="drop-content" style="display: none">
+        </div>
+    </div>
+
+
+</body>
+
+</html>

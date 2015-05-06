@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Functions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.css"">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+
+    <script type="text/javascript">
+
+        function submitForm(e){
+
+            var array = document.getElementById('arr').value
+
+            if (e == 'min') {
+                var min = getMin(array);
+                document.getElementById('rezultat').innerHTML=min;
+            } else if (e == 'max') {
+                var max = getMax(array);
+                document.getElementById('rezultat').innerHTML=max;
+            } else if (e == 'last') {
+                var last = getLast(array);
+                document.getElementById('rezultat').innerHTML=last;
+            }
+
+            return false;
+        }
+
+        function getMin(arrstring) {
+            var arr = arrstring.split(',');
+            var min=arr[0];
+            for (var s in arr) {
+                if (arr[s]<min){
+                    min = arr[s];
+                }
+            }
+            return min;
+        }
+
+        function getMax(arrstring) {
+            var arr = arrstring.split(',');
+            var max=arr[0];
+            for (var s in arr) {
+                if (arr[s]>max){
+                    max = arr[s];
+                }
+            }
+            return max;
+        }
+
+        function getLast(arrstring) {
+            var arr = arrstring.split(',');
+            var last=arr[0];
+            for (var s in arr) {
+                if (arr[s]!=undefined){
+                    last = arr[s];
+                }
+            }
+            return last;
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="header-wrapper">
+            <h1>Functions in JavaScript</h1>
+        </div>
+
+        <hr>
+
+        <div class="column">
+            <div class="h2-wrapper">
+                <h2>Arrays</h2>
+
+                <form onsubmit="return false;">
+                    <input class="edit" type="text" name="array" id="arr" placeholder=" input text here"/>
+                    <button type="submit" class="btn btn-6 btn-6d" id="min" onclick="submitForm('min');">Min</button>
+                    <button type="submit" class="btn btn-6 btn-6d" id="min" onclick="submitForm('max');">Max</button>
+                    <button type="submit" class="btn btn-6 btn-6d" id="min" onclick="submitForm('last');")">Last</button>
+                </form>
+
+                <output id="rezultat"></output>
+
+            </div>
+
+        </div>
+
+        <div class="column">
+        </div>
+
+        <div class="column">
+            <div class="h2-wrapper">
+                <h2>Section Title</h2>
+                <ul class="input-list style-1 clearfix">
+                    <li>
+                        <input type="text" placeholder=":input">
+                    </li>
+                </ul>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
