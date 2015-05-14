@@ -15,7 +15,7 @@ a {
 h2 {
     color: #e1524b;
     font-size: 28px;
-    margin: 0;
+    margin: 25px 0 15px 0;
 }
 
 h3 {
@@ -146,14 +146,9 @@ h3 {
     box-shadow: 0 2px #ab3c3c;
 }
 
-.default-btn {
-    background-color: #75C8C0;
-    box-shadow: 0 6px #5C9993;
-}
-
 .services {
     color: #7F8C8C;
-    margin: 50px 0;
+    margin: 50px 0 75px 0;
 }
 
 .service {
@@ -163,29 +158,46 @@ h3 {
     width: 250px;
     height: 250px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 50px 10px 0 10px;
     text-align: center;
     position: relative;
 }
 
-.actv {
-    background-color: #FFF;
+.service:hover {background-color: #fff;}
+.service:hover .icon {color: #cb4e4e;}
+.service:hover .read-more-btn {
+    background-color: #cb4e4e;
+    box-shadow: 0 6px #ab3c3c;
 }
 
 .icon {
     text-align: center;
-    color: #E2534B;
+    color: #76C7C0;
 }
 
 .read-more-btn {
     position: absolute;
     bottom: -20px;
     left: 75px;
+    background-color: #75C8C0;
+    box-shadow: 0 6px #5C9993;
 }
 
 .why-choose {
-    background-color: #ECECEC;
-    padding: 25px;
+    background: #ECECEC url("../images/footer-pattern.png") repeat-x left top;
+    padding: 50px;
+    height: 300px;
+    position: relative;
+}
+
+.promo-image {
+    position: absolute;
+    bottom: -200px;
+}
+
+.why-choose-2 {
+    padding: 50px;
+    height: 400px;
 }
 
 .block-content {
