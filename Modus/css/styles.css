@@ -22,6 +22,18 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7E8786;
+    margin: 15px 0 25px 0;
+}
+
+ul {
+    padding: 0 0 0 20px;
+}
+
 #header {
     color: #fff;
     padding: 25px 0;
@@ -161,6 +173,7 @@ h3 {
     padding: 50px 10px 0 10px;
     text-align: center;
     position: relative;
+    box-shadow: 0 4px #A4A69D;
 }
 
 .service:hover {background-color: #fff;}
@@ -195,17 +208,76 @@ h3 {
     bottom: -200px;
 }
 
-.why-choose-2 {
-    padding: 50px;
-    height: 400px;
-}
-
 .block-content {
     text-align: center;
 }
 
 .subheading {
     color: #7F8C8C;
+}
+
+.why-choose-2 {
+    padding: 50px;
+    height: 400px;
+    margin: 200px 0 50px 0;
+    color: #7E8786;
+    overflow: hidden;
+}
+
+.list {
+    float: left;
+    width: 270px;
+}
+
+.advantages {
+    list-style-image: url('../images/arrow.png'); 
+}
+
+.statistics {
+    float: left;
+    width: 540px;
+    margin-left: 30px;
+    padding: 0 15px;
+}
+
+.services2 {
+    overflow: hidden;
+}
+
+.service2 {
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.testimonials {
+    float: left;
+    width: 250px;
+    margin-left: 30px;
+    height: 100px;
+}
+
+.testimonial-text {
+    padding: 10px;
+    font-style: italic;
+}
+
+.testimonial {
+    border-radius: 5px;
+    position: relative;
+    background-image: url(../images/cloud.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 15px;
+}
+.cloud-bottom {
+    background-color: #f8f8f8;
+}
+
+.testimonial-user {
+    position: absolute;
+    padding-left: 40px;
+    font-size: 18px;
 }
 
 .clearfix {
