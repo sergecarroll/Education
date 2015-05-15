@@ -218,8 +218,7 @@ ul {
 
 .why-choose-2 {
     padding: 50px;
-    height: 400px;
-    margin: 200px 0 50px 0;
+    margin: 200px 0 0 0;
     color: #7E8786;
     overflow: hidden;
 }
@@ -278,6 +277,49 @@ ul {
     position: absolute;
     padding-left: 40px;
     font-size: 18px;
+}
+
+.clients {
+    overflow: hidden;
+}
+
+.h4-block {
+    float: left;
+}
+
+.breaker {
+    overflow: hidden;
+    float: left;
+    height:7px;
+    width: 885px;
+    background-image: url(../images/breaker.png);
+    margin: 20px 30px;
+}
+
+.arrows {
+    float: left;
+}
+
+.arrow-btn {
+    margin-top: 7px;
+    padding: 2px 8px;
+    background-color: #99A3A4;
+    box-shadow: 0 2px #525958;
+}
+
+.client-list {
+    height: 90px;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.client {
+    float: left;
+    width: 170px;
+    height: 90px;
+    margin-right: 30px;
+    background-color: #f8f8f8;
+    border-radius: 5px; 
 }
 
 .clearfix {
