@@ -46,9 +46,12 @@ ul.menu-list {
 }
 
 ul.menu-list li {
-    display: inline;
-    margin-right: 20px;
+    /*display: inline;*/
+    margin-right: 15px;
     text-transform: uppercase;
+    padding: 5px;
+    list-style: none;
+    float: left;
 }
 
 ul.menu-list li:hover {
@@ -59,7 +62,6 @@ ul.menu-list li:hover {
     padding: 5px 5px;
     transition: none;
     cursor: pointer;
-    display: inline-block;
     outline: none;
     position: relative;
     border: none;
@@ -303,7 +305,7 @@ ul.footer-list {
 }
 
 .advantages {
-    list-style-image: url('../images/arrow.png'); 
+    list-style-image: url('../images/arrow.png');
 }
 
 .statistics {
@@ -487,4 +489,8 @@ ul.footer-list {
 
 .social-rss {
     background-position: 0 0;
+}
+
+.btn-wrapper {
+    margin: 0 auto;
 }
