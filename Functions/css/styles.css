@@ -1,0 +1,187 @@
+body
+{
+    width: 100%;
+    height: auto;
+    
+    margin: 0;
+    padding: 0;
+
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat;
+    background-color: #464646;
+
+    font-family: 'Indie Flower', cursive;
+}
+
+h1
+{
+    line-height:100%;
+    font-size: 48px;
+    font-weight: normal;
+    color: ivory;
+    margin: 25px 0;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+h2
+{
+    line-height:100%;
+    font-size: 24px;
+    font-weight: normal;
+    color: ivory;
+    margin: 25px 0;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+p{
+    float: left;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: left;
+    color: ivory;
+    display: block;
+    margin: 0 15px 0 0;
+    padding: 0;
+    opacity: 0.8;
+}
+
+a{
+    display: block;
+    float: right;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    overflow: hidden;
+}
+
+i{
+    color: cornsilk;
+}
+
+hr{ 
+    opacity: 0.8;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 18px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+
+output {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 18px;
+    color: ivory;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.wrapper
+{
+    width: 90%;
+    margin: 5%;
+}
+
+.column
+{
+    float: left;
+    width: 33%;
+    margin: 100px auto;
+}
+
+.h2-wrapper{
+    margin: 25 auto;
+}
+
+.fade
+{
+    opacity: 0.7;
+}
+.fade:hover
+{
+    opacity: 1;
+}
+
+.edit {
+    border:1px solid #9E9E9E;
+    color: ivory;
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 11px;
+    background: transparent;
+    font-family: 'Indie Flower', cursive;
+}
+
+.btn-6d {
+    border: 1px #226fbe;
+    background: cadetblue;
+    color: ivory;
+}
+.btn-6d:hover {
+    background: darkgray;
+    color: ivory;
+}
+
+
+
+
+/* MEDIA SCREEN */
+@media screen and (max-width: 960px) {
+    .table {
+        margin: 15px 25px;
+        font-size: 18px;
+    }
+
+    .b-popup-content{
+        max-width: 450px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+
+    .b-popup-content{
+        max-width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table {
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+
+    .b-popup-content{
+        max-width: 300px;
+        height: 200px;
+    }
+}
+

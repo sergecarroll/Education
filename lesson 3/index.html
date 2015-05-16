@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<link rel="stylesheet" href="css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/lesson.js"></script>
+
+        <script type="text/javascript">
+
+            var btn;
+
+            function load(){
+                console.log('page loaded');
+
+                btn = document.getElementById('button');
+                inp = document.getElementById('input');
+
+                btn.addEventListener('click', function(event){
+                    console.log(event.altKey);
+                    console.log(event.target);
+                    console.log('nazhato');
+                    alert('nazhato');
+                }, false);
+
+                inp.addEventListener('keypress', function(event){
+                    console.log(event);
+
+                    if (event.which == 13) {
+                        alert('Enter has been pressed!');
+                        alert('event.target.value');
+                        console.log('Enter has been pressed!');
+                        console.log(event.target.value);
+                    }
+
+                }, false);
+
+                quad();
+            }
+
+            function quad(){
+
+                document.getElementById('d1').addEventListener('click', function(){
+                    alert(1);
+                }, false);
+
+                document.getElementById('d2').addEventListener('click', function(){
+                    alert(2);
+                }, false);
+
+                document.getElementById('d3').addEventListener('click', function(){
+                    alert(3);
+                }, false);
+            }
+
+            document.addEventListener('DOMContentLoaded', load, false);
+        </script>
+
+	</head>
+
+    <body>
+
+        <h1>Heading 1</h1>
+        <br/>
+        <h2>Heading 2</h2>
+        <hr/>
+        <div id="unmarked-list">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+
+        <div id="string">
+            <span>wahhelle halla habibi</span>
+        </div>
+
+        <br/>
+
+        <input id="button" value="Нажми Меня" type="button"/>
+
+        <input id="input" placeholder="Some text" type="text"/>
+
+        <br/>
+
+        <div id="d1">
+            <span class="number">1</span>
+            <div id="d2">
+                <span class="number">2</span>
+                <div id="d3">
+                    <span class="number">3</span>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

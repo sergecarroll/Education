@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Multiplication table</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.css"">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //Скрыть PopUp при загрузке страницы
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+       function PopUpShow(){
+            $("#popup1").show();
+        };
+
+        //Функция скрытия PopUp
+        function PopUpHide(){
+            $("#popup1").hide();
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#x1").click(function(){
+                $('#m2').hide();
+                $('#m3').hide();
+                $('#m4').hide();
+                $('#m5').hide();
+                $('#m6').hide();
+                $('#m7').hide();
+                $('#m8').hide();
+                $('#m9').hide();
+                $('#m10').hide();
+                $("#m1").show();
+            });
+
+            $("#x2").click(function(){
+                $('#m1').hide();
+                $('#m3').hide();
+                $('#m4').hide();
+                $('#m5').hide();
+                $('#m6').hide();
+                $('#m7').hide();
+                $('#m8').hide();
+                $('#m9').hide();
+                $('#m10').hide();
+                $("#m2").show();
+            });
+
+            $("#x3").click(function(){
+                $('#m2').hide();
+                $('#m1').hide();
+                $('#m4').hide();
+                $('#m5').hide();
+                $('#m6').hide();
+                $('#m7').hide();
+                $('#m8').hide();
+                $('#m9').hide();
+                $('#m10').hide();
+                $("#m3").show();
+            });
+
+            $("#x4").click(function(){
+                $('#m2').hide();
+                $('#m3').hide();
+                $('#m1').hide();
+                $('#m5').hide();
+                $('#m6').hide();
+                $('#m7').hide();
+                $('#m8').hide();
+                $('#m9').hide();
+                $('#m10').hide();
+                $("#m4").show();
+            });
+
+            $("#x5").click(function(){
+                $('#m2').hide();
+                $('#m3').hide();
+                $('#m4').hide();
+                $('#m1').hide();
+                $('#m6').hide();
+                $('#m7').hide();
+                $('#m8').hide();
+                $('#m9').hide();
+                $('#m10').hide();
+                $("#m5").show();
+            });
+
+            $("#x6").click(function(){
+                $('#m2').hide();
+                $('#m3').hide();
+                $('#m4').hide();
+                $('#m5').hide();
+                $('#m1').hide();
+                $('#m7').hide();
+                $('#m8').hide();
+                $('#m9').hide();
+                $('#m10').hide();
+                $("#m6").show();
+            });
+
+            $("#x7").click(function(){
+                $('#m2').hide();
+                $('#m3').hide();
+                $('#m4').hide();
+                $('#m5').hide();
+                $('#m6').hide();
+                $('#m1').hide();
+                $('#m8').hide();
+                $('#m9').hide();
+                $('#m10').hide();
+                $("#m7").show();
+            });
+
+            $("#x8").click(function(){
+                $('#m2').hide();
+                $('#m3').hide();
+                $('#m4').hide();
+                $('#m5').hide();
+                $('#m6').hide();
+                $('#m7').hide();
+                $('#m1').hide();
+                $('#m9').hide();
+                $('#m10').hide();
+                $("#m8").show();
+            });
+
+            $("#x9").click(function(){
+                $('#m2').hide();
+                $('#m3').hide();
+                $('#m4').hide();
+                $('#m5').hide();
+                $('#m6').hide();
+                $('#m7').hide();
+                $('#m8').hide();
+                $('#m1').hide();
+                $('#m10').hide();
+                $("#m9").show();
+            });
+
+            $("#x10").click(function(){
+                $('#m2').hide();
+                $('#m3').hide();
+                $('#m4').hide();
+                $('#m5').hide();
+                $('#m6').hide();
+                $('#m7').hide();
+                $('#m8').hide();
+                $('#m9').hide();
+                $('#m1').hide();
+                $("#m10").show();
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="header-wrapper">
+            <h1>Multiplication table</h1>
+        </div>
+
+        <div class="column">
+            <div class="h2-wrapper">
+                <ul>
+                    <li>
+                        <p>x1</p>
+                        <a href="javascript:PopUpShow()" id="x1"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                    <li>
+                        <p>x2</p>
+                        <a href="javascript:PopUpShow()" id="x2"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                    <li>
+                        <p>x3</p>
+                        <a href="javascript:PopUpShow()" id="x3"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                    <li>
+                        <p>x4</p>
+                        <a href="javascript:PopUpShow()" id="x4"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                    <li>
+                        <p>x5</p>
+                        <a href="javascript:PopUpShow()" id="x5"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="column">
+        </div>
+
+        <div class="column">
+            <div class="h2-wrapper">
+                <ul>
+                    <li>
+                        <p>x6</p>
+                        <a href="javascript:PopUpShow()" id="x6"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                    <li>
+                        <p>x7</p>
+                        <a href="javascript:PopUpShow()" id="x7"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                    <li>
+                        <p>x8</p>
+                        <a href="javascript:PopUpShow()" id="x8"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                    <li>
+                        <p>x9</p>
+                        <a href="javascript:PopUpShow()" id="x9"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                    <li>
+                        <p>x10</p>
+                        <a href="javascript:PopUpShow()" id="x10"><i class="fa fa-eye fa-2x fade"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+
+            <p class="table" id="m1">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("1 * " + i + " = " + (1*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <p class="table" id="m2">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("2 * " + i + " = " + (2*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <p class="table" id="m3">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("3 * " + i + " = " + (3*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <p class="table" id="m4">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("4 * " + i + " = " + (4*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <p class="table" id="m5">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("5 * " + i + " = " + (5*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <p class="table" id="m6">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("6 * " + i + " = " + (6*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <p class="table" id="m7">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("7 * " + i + " = " + (7*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <p class="table" id="m8">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("8 * " + i + " = " + (8*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <p class="table" id="m9">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("9 * " + i + " = " + (9*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <p class="table" id="m10">
+                <script type="text/javascript">
+                    for (var i=0; i<=10; i++) {
+                        document.write("10 * " + i + " = " + (10*i) );
+                        document.write('<br/>');
+                    }
+                </script>
+            </p>
+
+            <a href="javascript:PopUpHide()" id="close_button">Hide</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>The Beach</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.css"">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+
+    <script type="text/javascript">
+
+        function showHide(element_id) {
+            //Если элемент с id-шником element_id существует
+            if (document.getElementById(element_id)) {
+                //Записываем ссылку на элемент в переменную obj
+                var obj = document.getElementById(element_id);
+                //Если css-свойство display не block, то:
+                if (obj.style.display != "block") {
+                    obj.style.display = "block"; //Показываем элемент
+                }
+                else obj.style.display = "none"; //Скрываем элемент
+            }
+            //Если элемент с id-шником element_id не найден, то выводим сообщение
+            else alert("Элемент с id: " + element_id + " не найден!");
+        }
+
+        function changeMark() {
+            var obj = document.getElementById('girl');
+            var plus = document.getElementById('plus');
+            var minus = document.getElementById('minus');
+
+            if (obj.style.display == "none") {
+                plus.style.display = "block";
+                minus.style.display = "none";
+            }
+            else if (obj.style.display == "block") {
+                plus.style.display = "none";
+                minus.style.display = "block";
+            }
+        }
+    </script>
+
+     <script type="text/javascript">
+        $(window).load(function(){
+
+            $(document).mousemove(function(e){
+                var x = e.pageX;
+                var y = e.pageY;
+                var girl = $('#girl');
+
+                girl.css('left',x-girl.width());
+                girl.css('top',y-girl.height());
+            });
+
+        });
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="header-wrapper">
+            <h1>Dynamic JavaScript page</h1>
+        </div>
+
+        <div onclick="showHide('girl'); changeMark()" class="open-button">
+            <a href="#" id="plus" style="display: block;">+</a>
+            <a href="#" id="minus" style="display: none;">-</a>
+        </div>
+
+
+
+        <div class="girl-wrapper">
+            <img id="girl" src="images/girl.png"/>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

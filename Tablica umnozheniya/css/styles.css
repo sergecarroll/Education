@@ -1,0 +1,158 @@
+body
+{
+    width: 100%;
+    height: auto;
+    
+    margin: 0;
+    padding: 0;
+
+    background-image: url(../images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+
+    font-family: 'Lobster', cursive;
+}
+
+h1
+{
+    line-height:100%;
+    font-size: 48px;
+    font-weight: normal;
+    color: ivory;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    margin: 0;
+    display: block;
+}
+
+p{
+    float: left;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: left;
+    color: ivory;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    display: block;
+    margin: 0 15px 0 0;
+    padding: 0;
+}
+
+a{
+    display: block;
+    float: right;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    overflow: hidden;
+}
+
+i{
+    color: deeppink;
+}
+
+#close_button{
+    float: right;
+    text-align: end;
+    color: darkslategray;
+}
+
+.wrapper
+{
+    width: 90%;
+    margin: 5%;
+}
+
+.column
+{
+    float: left;
+    width: 33%;
+    margin: 100px auto;
+}
+
+.h2-wrapper{
+    width: 20%;
+    margin: 0 auto;
+    min-width: 100px;
+}
+
+.fade
+{
+    opacity: 0.7;
+}
+.fade:hover
+{
+    opacity: 1;
+}
+
+
+.b-popup{
+    width:100%;
+    min-height:100%;
+ /*   background-color: rgba(0,0,0,0.5);*/
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+
+
+.b-popup-content{
+    background-image: url(../images/popup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+
+    margin:100px auto;
+    width:100%;
+    max-width: 600px;
+    height: 400px;
+    padding:10px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.table{
+    margin: 30px 50px;
+}
+
+@media screen and (max-width: 960px) {
+    .table {
+        margin: 15px 25px;
+        font-size: 18px;
+    }
+
+    .b-popup-content{
+        max-width: 450px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+
+    .b-popup-content{
+        max-width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table {
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+
+    .b-popup-content{
+        max-width: 300px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,111 @@
+body
+{
+    width: 100%;
+    height: auto;
+    
+    margin: 0;
+    padding: 0;
+
+    background-image: url(../images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+
+    font-family: 'Ubuntu', sans-serif;
+    color: ivory;
+}
+
+h1
+{
+    line-height:100%;
+    font-size: 48px;
+    font-weight: normal;
+    color: ivory;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    margin: 0;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: ivory;
+    margin: 0 auto;
+}
+
+#girl{
+    position: absolute;
+    display: none;
+}
+
+.wrapper
+{
+    width: 90%;
+    height: auto;
+    margin: 5%;
+}
+
+.girl-wrapper{
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 150px 0 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.open-button{
+    display: block;
+    font-size: 48px;
+    opacity: 0.5;
+    float: right;
+}
+
+.open-button:hover{
+    display: block;
+    font-size: 48px;
+    opacity: 1;
+    float: right;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/*
+@media screen and (max-width: 960px) {
+    .table {
+        margin: 15px 25px;
+        font-size: 18px;
+    }
+
+    .b-popup-content{
+        max-width: 450px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+
+    .b-popup-content{
+        max-width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table {
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+
+    .b-popup-content{
+        max-width: 300px;
+        height: 200px;
+    }
+}
+*/
