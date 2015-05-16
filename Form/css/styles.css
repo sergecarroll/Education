@@ -1,0 +1,24 @@
+body {
+	font-family: 'Poiret One', cursive;
+	background-image: url('../images/bg.png');
+	background-repeat: repeat;
+	background-position: top left;
+	color: white;
+}
+
+p {
+	margin: 5px 0;
+	font-size: 18px;
+}
+
+.input {
+	margin-bottom: 2px;
+}
+
+.col-md-4 {
+	/*background-color: #f3f3f3;*/
+}
+
+.submit-btn {
+	margin-top: 25px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+        	var $form = $('form');
+        	var $contactList = $('.contactList');
+
+        	var storageContacts = JSON.parse(localStorage.getItem('contactList'));
+
+        	if (!storageContacts) {
+        		storageContacts = [];
+        	} else {
+        		storageContacts.forEach(function(contact){
+        			$contactList.append('<li>' + contact.firstName + '—' + contact.age + '—' + contact.sex + '—' + contact.race + '</li>');
+        		})
+        	}
+        	
+        	console.log($form);
+
+        	$form.on('submit', function(event) {
+        		event.preventDefault();
+
+        		var $firstName = $form.find('input[name="firstName"]');
+        		var $age = $form.find('input[name="age"]');
+        		var $sex = $form.find('input[name="sex"]');
+        		var $race = $form.find('input[name="race"]');
+
+        		var data = {
+        			firstName: $firstName.val(),
+        			age: $age.val(),
+        			sex: $sex.val(),
+        			race: $race.val()
+        		};
+
+        		console.log('siski');
+
+        		$firstName.val('');
+        		$age.val('');
+        		$sex.val('');
+        		$race.val('');
+
+        		storageContacts.push(data);
+
+        		localStorage.setItem('contactList',JSON.stringify(storageContacts));
+
+        		$contactList.append('<li>' + data.firstName + '—' + data.age + '—' + data.sex + '—' + data.race + '</li>');
+
+        		return false;
+
+        	})
+
+        });
+    </script>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Form Submit</h1>
+		<div class="col-md-4">
+			<form>
+				<h2>The Form</h2>
+				<p>Name</p>
+				<input class="input" type="text" name="firstName">
+				<p>Age</p>
+				<input class="input" type="text" name="age">
+				<p>Sex</p>
+				<input class="input" type="text" name="sex">
+				<p>Race</p>
+				<input class="input" type="text" name="race">
+				<br>
+				<span><input class="btn btn-success submit-btn" type="button" value="Submit"></span>
+			</form>
+		</div>
+		
+		<div class="col-md-4">
+			<h2>Contacts</h2>
+			<ul class="contactList"></ul>
+		</div>
+	</div>
+	
+</body>
+</html>
